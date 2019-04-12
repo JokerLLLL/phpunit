@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":267:{a:2:{s:7:"defects";a:2:{s:20:"base\Unit::testArray";i:3;s:28:"base\Unit::testDataException";i:3;}s:5:"times";a:4:{s:20:"base\Unit::testArray";d:0.003;s:25:"base\Unit::testDataIsTrue";d:0;s:26:"base\Unit::testDataIsFalse";d:0;s:28:"base\Unit::testDataException";d:0;}}}
