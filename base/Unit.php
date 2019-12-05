@@ -135,7 +135,7 @@ class Unit extends TestCase
             ->method('update')
             ->with($this->stringContains('bbb'));
 
-        $mockObserver->expects($this->exactly(1))
+        $mockObserver->expects($this->any())
             ->method('delete')
             ->with($this->stringContains('bbb'))
             ->will($this->returnArgument(true));
