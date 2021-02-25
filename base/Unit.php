@@ -143,4 +143,14 @@ class Unit extends TestCase
         $mockObserver->update('testaaabbb');
         $this->assertEquals(true, $mockObserver->delete('testaaabbb'));
     }
+
+    public function testExpectsTimes()
+    {
+        $mock = $this->getMockBuilder(Myabc::class)
+            ->setMethods(['getRandNum']) // mock 过就return null
+            ->getMock()
+        ;
+        $mock->expects($this->exactly(3))->method('getRandNum');
+        $mock->test();
+    }
 }
